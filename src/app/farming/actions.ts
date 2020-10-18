@@ -86,11 +86,7 @@ export function startFarming(storeId: string): ThunkResult {
           dispatch(farmD1(farmingStore));
         } else {
           // In D2 we just make room
-          const itemsToBePulledFromPostmaster = pullablePostmasterEquipment(
-            farmingStore,
-            storesSelector(getState())
-          );
-          if (itemsToBePulledFromPostmaster.length > 0) {
+          if (pullablePostmasterEquipment(farmingStore, storesSelector(getState())).length > 0) {
             dispatch(pullEquipmentFromPostmaster(farmingStore));
           }
           dispatch(makeRoomForItems(farmingStore));
