@@ -26,7 +26,7 @@ export default function FarmingView({ store }: Props) {
   const allItems = useSelector(allItemsSelector);
   const filters = useSelector(searchFiltersConfigSelector);
   const savedSearches = useSelector(recentSearchesSelector).filter(({ saved }) => saved);
-  const [query, setQuery] = useState<string>(savedSearches?.[0].query);
+  const [query, setQuery] = useState<string>(savedSearches.length ? savedSearches[0].query : '');
   const options: Option[] = savedSearches.map(({ query }) => ({
     key: query,
     content: query,
