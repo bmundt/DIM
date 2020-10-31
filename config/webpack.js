@@ -416,10 +416,6 @@ module.exports = (env) => {
       tls: 'empty',
     },
   };
-  console.log('CLIENT_ID: %s', process.env.WEB_OAUTH_CLIENT_ID);
-  console.log('CLIENT_SECRET: %s', process.env.WEB_OAUTH_CLIENT_SECRET);
-  console.log('DIM_API_KEY: %s', process.env.DIM_API_KEY);
-  console.log('WEB_API_KEY: %s', process.env.WEB_API_KEY);
 
   // Enable if you want to debug the size of the chunks
   if (env.WEBPACK_VISUALIZE) {
