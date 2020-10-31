@@ -417,6 +417,7 @@ module.exports = (env) => {
       tls: 'empty',
     },
   };
+  console.log('CLIENT_ID: %s', process.env.WEB_OAUTH_CLIENT_ID);
 
   // Enable if you want to debug the size of the chunks
   if (env.WEBPACK_VISUALIZE) {
