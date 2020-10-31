@@ -24,7 +24,7 @@
     "install": "git submodule update --init --recursive",
     "heroku-prebuild": "npm run install",
     "heroku-postbuild": "npm run build-beta",
-    "start-server": "http-server ./dist -UbS -p $PORT"
+    "start-server": "http-server ./dist -Ub -p $PORT"
   },
   "husky": {
     "hooks": {
