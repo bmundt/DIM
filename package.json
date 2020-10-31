@@ -18,7 +18,8 @@
     "publish-beta": "npm run build-beta -s && grunt publish_beta",
     "publish-release": "npm run build-release -s && grunt publish_release",
     "pretty": "prettier --write 'src/**/*.{js,ts,tsx,scss,html}'",
-    "install": "git submodule update --init --recursive"
+    "install": "git submodule update --init --recursive",
+    "start-server": "http-server ./dist -UbS"
   },
   "husky": {
     "hooks": {
@@ -175,6 +176,7 @@
     "fast-copy": "^2.0.1",
     "fast-equals": "^2.0.0",
     "framer-motion": "^2.9.1",
+    "http-server": "^0.12.3",
     "i18next": "^19.0.0",
     "i18next-xhr-backend": "^3.0.0",
     "idb-keyval": "^3.1.0",
