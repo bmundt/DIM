@@ -3,6 +3,9 @@
   "version": "6.36.1",
   "description": "An item manager for Destiny.",
   "main": "app/index.html",
+  "engines": {
+    "yarn": "1.22.5"
+  },
   "scripts": {
     "test": "jest --verbose --coverage",
     "lint": "jsonsort src/locale && eslint --fix src --ext .js,.ts,.tsx && stylelint --fix \"src/**/*.scss\"",
