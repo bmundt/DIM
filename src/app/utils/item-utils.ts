@@ -198,12 +198,14 @@ export function itemCanBeInLoadout(item: DimItem): boolean {
 /** verifies an item has kill tracker mod slot, which is returned */
 const getKillTrackerSocket = (item: DimItem): DimSocket | undefined => {
   if (item.bucket.inWeapons) {
-    return item.sockets?.allSockets.find(
-      (socket) =>
-        (socket.plugged?.plugObjectives[0]?.objectiveHash ?? 0) in killTrackerObjectivesByHash
-    );
+    return item.sockets?.allSockets.find(isKillTrackerSocket);
   }
 };
+
+/** Is this both a kill tracker socket, and the kill tracker is enabled? */
+export function isKillTrackerSocket(socket: DimSocket) {
+  return (socket.plugged?.plugObjectives[0]?.objectiveHash ?? 0) in killTrackerObjectivesByHash;
+}
 
 export type KillTracker = {
   type: 'pve' | 'pvp';

@@ -1,7 +1,34 @@
 ## Next
 
+* Removed "Color Blind Mode" setting. This didn't help with DIM's accessibility - it just put a filter over the page to *simulate what it would be like* if you had various forms of color blindness.
+* Added `hunt` as valid season synonym.
+* Clicking on the energy track or element for armor can now let you preview how much it'd cost in total to upgrade energy or change element.
+* Redesigned weapon perks/mods to more clearly call out archetype and key stats.
+* Improved the buttons that show in the item popup for items in postmaster. For stacked items you can now take just one, or all of the item.
+* Some items that DIM couldn't pull from postmaster before, can be pulled now.
+* Fixed the display of stat trackers for raid speed runs.
+* Hide the "kill tracker" perk column on masterworked weapons.
+
+## 6.36.1 <span className="changelog-date">(2020-10-26)</span>
+
+* Some more tweaks to the sidecar layout.
+* Put back automatically showing dupes when launching compare.
+* The item popup now closes when you start dragging an item.
+
+## 6.36.0 <span className="changelog-date">(2020-10-25)</span>
+
+* Rearranged equip/move buttons on sidecar to be horizontal icons instead of menu items.
+* On mobile, you can switch characters in either direction, in a loop.
 * Added cooldown and effect values to stat tooltips.
-* Added stat tooltips to the loadout optimizer.
+* Added stat tooltips to the Loadout Optimizer.
+* Fixed descriptions for mod effects in the Loadout Optimizer's mod picker.
+* New keyboard shortcuts for pull item (P), vault item (V), lock/unlock item (L), expand/collapse sidecar (K), and clear tag (Shift+0). Remember, you must click an item before being able to use shortcuts.
+* Made the item popup a bit thinner.
+* Collapsing sections now animate open and closed.
+
+### Beta Only
+
+* We're experimenting with a new "Search Results" sheet that shows all the items matching your search in one place.
 
 ## 6.35.0 <span className="changelog-date">(2020-10-18)</span>
 

@@ -363,8 +363,6 @@ module.exports = (env) => {
 
         // Print debug info to console about item moves
         '$featureFlags.debugMoves': JSON.stringify(!env.release),
-        // Enable color-blind a11y
-        '$featureFlags.colorA11y': JSON.stringify(true),
         // Debug Service Worker
         '$featureFlags.debugSW': JSON.stringify(!env.release),
         // Send exception reports to Sentry.io on beta only
@@ -395,6 +393,10 @@ module.exports = (env) => {
         '$featureFlags.altInventoryMode': JSON.stringify(env.dev),
         // Enable search results
         '$featureFlags.searchResults': JSON.stringify(!env.release),
+        // Alternate perks display on item popup
+        '$featureFlags.newPerks': JSON.stringify(env.dev),
+        // Advanced Write Actions (inserting mods)
+        '$featureFlags.awa': JSON.stringify(process.env.USER === 'brh'), // Only Ben has the keys...
       }),
 
       new WorkerPlugin({
@@ -407,8 +409,6 @@ module.exports = (env) => {
         shorthands: true,
         flattening: true,
       }),
-
-      new webpack.WatchIgnorePlugin([/scss\.d\.ts$/]),
     ],
 
     node: {

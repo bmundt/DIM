@@ -1,5 +1,5 @@
 import { DestinyVersion, TagValue } from '@destinyitemmanager/dim-api-types';
-import { StoreIcons } from 'app/character-tile/StoreIcons';
+import { StoreIcon } from 'app/character-tile/StoreIcon';
 import { StatInfo } from 'app/compare/Compare';
 import { D2ManifestDefinitions } from 'app/destiny2/d2-definitions';
 import BungieImage from 'app/dim-ui/BungieImage';
@@ -124,7 +124,7 @@ export function getColumns(
           return undefined;
         }
         return {
-          id: `stat_${statHash}`,
+          id: `stat${statHash}`,
           header: statInfo.displayProperties.hasIcon ? (
             <span title={statInfo.displayProperties.name}>
               <BungieImage src={statInfo.displayProperties.icon} />
@@ -666,7 +666,7 @@ function StoreLocation({ storeId }: { storeId: string }) {
 
   return (
     <div className={styles.locationCell}>
-      <StoreIcons store={store} /> {store.className}
+      <StoreIcon store={store} /> {store.className}
     </div>
   );
 }

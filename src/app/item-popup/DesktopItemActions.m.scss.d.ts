@@ -7,11 +7,12 @@ interface CssExports {
   'disabled': string;
   'entry': string;
   'equip': string;
-  'hideLabel': string;
+  'hideWhenCollapsed': string;
   'interaction': string;
   'itemTagSelector': string;
   'move': string;
-  'null': string;
+  'moveLocationIcons': string;
+  'moveLocations': string;
 }
 export const cssExports: CssExports;
 export default cssExports;
