@@ -1,1 +1,1 @@
-web: yarn heroku-start-server
+web: yarn start
