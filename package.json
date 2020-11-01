@@ -162,6 +162,7 @@
     "worker-plugin": "^5.0.0"
   },
   "dependencies": {
+    "@babel/preset-typescript": "^7.12.1",
     "@babel/runtime": "^7.1.2",
     "@destinyitemmanager/dim-api-types": "^1.0.0",
     "@fortawesome/fontawesome-free": "^5.12.1",
