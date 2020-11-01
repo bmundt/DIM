@@ -73,7 +73,7 @@ module.exports = (env) => {
     // Dev server
     devServer: process.env.WEBPACK_DEV_SERVER
       ? {
-          host: process.env.DOCKER ? '0.0.0.0' : 'localhost',
+          host: process.env.DOCKER || process.env.PORT ? '0.0.0.0' : 'localhost',
           stats: 'errors-only',
           https: {
             key: fs.readFileSync('key.pem'), // Private keys in PEM format.
