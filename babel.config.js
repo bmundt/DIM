@@ -58,6 +58,7 @@ module.exports = function (api) {
   return {
     presets: [
       [
+        '@babel/preset-typesscript', // added to try to fix dev on heroku
         '@babel/preset-env',
         {
           bugfixes: true,
