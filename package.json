@@ -22,7 +22,6 @@
     "publish-release": "npm run build-release -s && grunt publish_release",
     "pretty": "prettier --write 'src/**/*.{js,ts,tsx,scss,html}'",
     "install": "git submodule update --init --recursive",
-    "heroku-prebuild": "npm run install",
     "heroku-postbuild": "npm run start",
     "heroku-start-server": "http-server ./dist -Ub -p $PORT",
     "start-server": "http-server ./dist -UbS -p $PORT"
