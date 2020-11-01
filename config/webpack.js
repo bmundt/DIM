@@ -82,7 +82,7 @@ module.exports = (env) => {
           historyApiFallback: true,
           hotOnly: true,
           liveReload: false,
-          port: process.env.PORT ? process.env.port : 8008,
+          port: process.env.PORT ? process.env.PORT : 8008,
         }
       : {},
 
